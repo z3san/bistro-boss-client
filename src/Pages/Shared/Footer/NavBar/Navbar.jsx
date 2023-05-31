@@ -6,7 +6,7 @@ const Navbar = () => {
     const navOptions = <>
      <li><Link to='/'>Home</Link></li>
      <li><Link to='/menu'>Our Menu</Link></li>
-     <li><Link to='/order'>Order Food</Link></li>
+     <li><Link to='/order/salad'>Order Food</Link></li>
         
         
        
@@ -24,7 +24,7 @@ const Navbar = () => {
        {navOptions}
       </ul>
     </div>
-    <a className="btn btn-ghost normal-case text-xl">Bistro Boss</a>
+    <Link to='/' className="btn btn-ghost normal-case text-xl">Bistro Boss</Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
