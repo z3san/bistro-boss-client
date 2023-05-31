@@ -5,16 +5,13 @@ import menuImage from "../../../assets/menu/banner3.jpg"
 import PopularMenu from '../../Home/PopularMenu/PopularMenu';
 const Menu = () => {
     return (
+        
         <div>
             <Helmet>
                 <title>Bistro Boss | Menu</title>
             </Helmet>
             <Cover img={menuImage} title={"our menu"}></Cover>
-            <PopularMenu></PopularMenu>
-            <Cover img={menuImage} title={"our menu"}></Cover>
-            <PopularMenu></PopularMenu>
-            <Cover img={menuImage} title={"our menu"}></Cover>
-            <PopularMenu></PopularMenu>
+           
         </div>
     );
 };
