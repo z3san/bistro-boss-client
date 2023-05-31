@@ -4,13 +4,15 @@ import Cover from "../Shared/Cover/Cover";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import useMenu from "../../Hooks/UseMenu";
-import FoodCard from "../../Components/FoodCard/FoodCard";
 import OrderTab from "./OrderTab";
+import { useParams } from "react-router-dom";
 
 const Order = () => {
 
 const [tabIndex, setTabIndex] = useState(0)
 const [menu] = useMenu()
+const {category} = useParams()
+console.log(category);
 const desserts = menu.filter(item=>item.category=== 'dessert')
 const soup = menu.filter(item=>item.category=== 'soup')
 const salad = menu.filter(item=>item.category=== 'salad')

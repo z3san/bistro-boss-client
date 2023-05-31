@@ -2,6 +2,7 @@ import React from 'react';
 
 const FoodCard = ({item}) => {
 
+
     const {name,image, price,recipe} = item
 
     return (
